@@ -1,7 +1,7 @@
 {
   "name": "redux-coreapi",
-  "version": "0.1.0",
-  "homepage": "https://bitsick.github.io/redux-coreapi",
+  "version": "0.1.1",
+  "homepage": "https://github.com/bitsick/redux-coreapi",
   "description": "A minimal interface between Redux and Core API JavaScript clients.",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -16,7 +16,7 @@
   "scripts": {
     "build": "./node_modules/.bin/rollup -c",
     "clean": "./node_modules/.bin/rimraf dist es lib coverage",
-    "docs": "./node_modules/.bin/jsdoc2md src/*.js > docs/api.md",
+    "docs": "./node_modules/.bin/jsdoc2md --template docs/api.hbs src/*.js > docs/api.md",
     "jest": "cross-env NODE_ENV=commonjs ./node_modules/.bin/jest",
     "jest:watch": "npm run jest -- --watch",
     "lint": "./node_modules/.bin/eslint src test build",

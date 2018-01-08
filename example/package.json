@@ -1,7 +1,7 @@
 {
   "name": "redux-coreapi-example",
-  "version": "0.1.0",
-  "homepage": "https://bitsick.github.io/redux-coreapi",
+  "version": "0.1.1",
+  "homepage": "https://github.com/bitsick/redux-coreapi",
   "description": "An example of redux-coreapi usage.",
   "scripts": {
     "start": "react-scripts start",

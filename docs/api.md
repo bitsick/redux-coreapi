@@ -1,3 +1,5 @@
+# `redux-coreapi` API Reference
+
 ## Constants
 
 <dl>
