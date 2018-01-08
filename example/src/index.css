@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 1em;
+  font-family: sans-serif;
+}
+
+form, .todo, .error, .loading, .not-found {
+  margin-bottom: 1em;
+}
+
+form > div {
+  margin-bottom: 0.5em;
+}
+
+.todo > div {
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+.todo a{
+  text-decoration: none;
+}

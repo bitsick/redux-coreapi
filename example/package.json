@@ -1,0 +1,42 @@
+{
+  "name": "redux-coreapi-example",
+  "version": "0.1.0",
+  "homepage": "https://bitsick.github.io/redux-coreapi",
+  "description": "An example of redux-coreapi usage.",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bitsick/redux-coreapi.git"
+  },
+  "author": "Bitsick Productions LLC <contact@bitsick.com> (https://github.com/bitsick)",
+  "contributors": [
+    {
+      "name": "Austin Matsick",
+      "email": "austin@bitsick.com",
+      "url": "https://github.com/ajmatsick"
+    }
+  ],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bitsick/redux-coreapi/issues"
+  },
+  "dependencies": {
+    "create-react-app": "^1.4.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^5.0.0-alpha.7",
+    "react-scripts": "^1.0.17",
+    "redux": "^3.7.2",
+    "redux-devtools": "^3.4.1",
+    "redux-devtools-dock-monitor": "^1.1.3",
+    "redux-devtools-log-monitor": "^1.4.0"
+  }
+}
