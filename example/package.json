@@ -26,6 +26,7 @@
     "url": "https://github.com/bitsick/redux-coreapi/issues"
   },
   "dependencies": {
+    "coreapi": "^0.1.1",
     "create-react-app": "^1.4.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -35,6 +36,7 @@
     "react-router-redux": "^5.0.0-alpha.7",
     "react-scripts": "^1.0.17",
     "redux": "^3.7.2",
+    "redux-coreapi": "^0.1.1",
     "redux-devtools": "^3.4.1",
     "redux-devtools-dock-monitor": "^1.1.3",
     "redux-devtools-log-monitor": "^1.4.0"
