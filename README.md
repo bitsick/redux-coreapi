@@ -71,7 +71,7 @@ store.dispatch(action(
 ## API
 
 Full API documentation is available in [`docs/api.md`](./docs/api.md) file
-or at https://bitsick.github.io/redux-coreapi/api.md.
+or at https://bitsick.github.io/redux-coreapi/api.html.
 
 ### `get(client, url)`
 

@@ -1,5 +1,6 @@
 /**
  * Dispatched by {@link action} to initiate a Core API action request.
+ * @type string
  */
 export const CLIENT_ACTION = 'redux-coreapi:CLIENT_ACTION'
 
@@ -9,7 +10,7 @@ export const CLIENT_ACTION = 'redux-coreapi:CLIENT_ACTION'
  *
  * @typedef {Object} ClientAction
  * @property {string} type - The type of the Redux action. Must always be set
- *   to {@see CLIENT_ACTION}.
+ *   to {@link CLIENT_ACTION}.
  * @property {Object} payload - An object containing the data for the request.
  * @property {coreapi.Client} payload.client - The Core API client instance
  *   with which the request will be made.
@@ -36,7 +37,7 @@ export const CLIENT_ACTION_FAILURE = 'redux-coreapi:CLIENT_ACTION_FAILURE'
  *
  * @typedef {Object} ClientActionFailure
  * @property {string} type - The type of the Redux action. Must always be set
- *   to {@see CLIENT_ACTION_FAILURE}.
+ *   to {@link CLIENT_ACTION_FAILURE}.
  * @property {Object} payload - An object containing the data for the request.
  * @property {coreapi.Client} payload.client - The Core API client instance
  *   with which the request was be made.
@@ -64,7 +65,7 @@ export const CLIENT_ACTION_REQUEST = 'redux-coreapi:CLIENT_ACTION_REQUEST'
  *
  * @typedef {Object} ClientActionRequest
  * @property {string} type - The type of the Redux action. Must always be set
- *   to {@see CLIENT_ACTION_REQUEST}.
+ *   to {@link CLIENT_ACTION_REQUEST}.
  * @property {Object} payload - An object containing the data for the request.
  * @property {coreapi.Client} payload.client - The Core API client instance
  *   with which the request will be made.
@@ -91,7 +92,7 @@ export const CLIENT_ACTION_SUCCESS = 'redux-coreapi:CLIENT_ACTION_SUCCESS'
  *
  * @typedef {Object} ClientActionSuccess
  * @property {string} type - The type of the Redux action. Must always be set
- *   to {@see CLIENT_ACTION_SUCCESS}.
+ *   to {@link CLIENT_ACTION_SUCCESS}.
  * @property {Object} payload - An object containing the data for the request.
  * @property {coreapi.Client} payload.client - The Core API client instance
  *   with which the request was be made.
@@ -108,6 +109,7 @@ export const CLIENT_ACTION_SUCCESS = 'redux-coreapi:CLIENT_ACTION_SUCCESS'
 
 /**
  * Dispatched by {@link get} to initiate a Core API document request.
+ * @type string
  */
 export const CLIENT_GET = 'redux-coreapi:CLIENT_GET'
 
@@ -117,7 +119,7 @@ export const CLIENT_GET = 'redux-coreapi:CLIENT_GET'
  *
  * @typedef {Object} ClientGet
  * @property {string} type - The type of the Redux action. Must always be set
- *   to {@see CLIENT_GET}.
+ *   to {@link CLIENT_GET}.
  * @property {Object} payload - An object containing the data for the request.
  * @property {coreapi.Client} payload.client - The Core API client instance
  *   with which the request will be made.
@@ -137,7 +139,7 @@ export const CLIENT_GET_FAILURE = 'redux-coreapi:CLIENT_GET_FAILURE'
  *
  * @typedef {Object} ClientGetFailure
  * @property {string} type - The type of the Redux action. Must always be set
- *   to {@see CLIENT_GET_FAILURE}.
+ *   to {@link CLIENT_GET_FAILURE}.
  * @property {Object} payload - An object containing the data for the request.
  * @property {coreapi.Client} payload.client - The Core API client instance
  *   with which the request will be made.
@@ -159,7 +161,7 @@ export const CLIENT_GET_REQUEST = 'redux-coreapi:CLIENT_GET_REQUEST'
  *
  * @typedef {Object} ClientGetRequest
  * @property {string} type - The type of the Redux action. Must always be set
- *   to {@see CLIENT_GET_REQUEST}.
+ *   to {@link CLIENT_GET_REQUEST}.
  * @property {Object} payload - An object containing the data for the request.
  * @property {coreapi.Client} payload.client - The Core API client instance
  *   with which the request will be made.
@@ -179,7 +181,7 @@ export const CLIENT_GET_SUCCESS = 'redux-coreapi:CLIENT_GET_SUCCESS'
  *
  * @typedef {Object} ClientGetSuccess
  * @property {string} type - The type of the Redux action. Must always be set
- *   to {@see CLIENT_GET_SUCCESS}.
+ *   to {@link CLIENT_GET_SUCCESS}.
  * @property {Object} payload - An object containing the data for the request.
  * @property {coreapi.Client} payload.client - The Core API client instance
  *   with which the request will be made.

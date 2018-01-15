@@ -3,7 +3,7 @@
 ## Constants
 
 <dl>
-<dt><a href="#CLIENT_ACTION">CLIENT_ACTION</a></dt>
+<dt><a href="#CLIENT_ACTION">CLIENT_ACTION</a> : <code>string</code></dt>
 <dd><p>Dispatched by <a href="#action">action</a> to initiate a Core API action request.</p>
 </dd>
 <dt><a href="#CLIENT_ACTION_FAILURE">CLIENT_ACTION_FAILURE</a> : <code>string</code></dt>
@@ -15,7 +15,7 @@
 <dt><a href="#CLIENT_ACTION_SUCCESS">CLIENT_ACTION_SUCCESS</a> : <code>string</code></dt>
 <dd><p>Dispatched when a Core API action request succeeds.</p>
 </dd>
-<dt><a href="#CLIENT_GET">CLIENT_GET</a></dt>
+<dt><a href="#CLIENT_GET">CLIENT_GET</a> : <code>string</code></dt>
 <dd><p>Dispatched by <a href="#get">get</a> to initiate a Core API document request.</p>
 </dd>
 <dt><a href="#CLIENT_GET_FAILURE">CLIENT_GET_FAILURE</a> : <code>string</code></dt>
@@ -90,7 +90,7 @@ is dispatched with the request and error data.</li>
 
 <a name="CLIENT_ACTION"></a>
 
-## CLIENT_ACTION
+## CLIENT_ACTION : <code>string</code>
 Dispatched by [action](#action) to initiate a Core API action request.
 
 **Kind**: global constant  
@@ -114,7 +114,7 @@ Dispatched when a Core API action request succeeds.
 **Kind**: global constant  
 <a name="CLIENT_GET"></a>
 
-## CLIENT_GET
+## CLIENT_GET : <code>string</code>
 Dispatched by [get](#get) to initiate a Core API document request.
 
 **Kind**: global constant  
@@ -143,7 +143,7 @@ Make a Core API action request.
 
 **Kind**: global function  
 **Returns**: [<code>ClientAction</code>](#ClientAction) - - A Redux action for the Core API action request.
-  If an argument contains invalid data, a {@see ClientActionError} will be
+  If an argument contains invalid data, a [ClientActionError](ClientActionError) will be
   returned instead.  
 
 | Param | Type | Description |
@@ -160,7 +160,7 @@ Make a Core API document request.
 
 **Kind**: global function  
 **Returns**: [<code>ClientGet</code>](#ClientGet) - - A Redux action for the Core API get request.  If an
-  argument contains invalid data, a {@see ClientGetError} will be returned
+  argument contains invalid data, a [ClientGetError](ClientGetError) will be returned
   instead.  
 
 | Param | Type | Description |
@@ -204,7 +204,7 @@ Contains the data for an [action](#action) call.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| type | <code>string</code> | The type of the Redux action. Must always be set   to {@see CLIENT_ACTION}. |
+| type | <code>string</code> | The type of the Redux action. Must always be set   to [CLIENT_ACTION](#CLIENT_ACTION). |
 | payload | <code>Object</code> | An object containing the data for the request. |
 | payload.client | <code>coreapi.Client</code> | The Core API client instance   with which the request will be made. |
 | payload.document | <code>coreapi.Document</code> | The Core API schema document   describing the API to which the request will be sent. |
@@ -221,7 +221,7 @@ Contains the data for a failed Core API action request.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| type | <code>string</code> | The type of the Redux action. Must always be set   to {@see CLIENT_ACTION_FAILURE}. |
+| type | <code>string</code> | The type of the Redux action. Must always be set   to [CLIENT_ACTION_FAILURE](#CLIENT_ACTION_FAILURE). |
 | payload | <code>Object</code> | An object containing the data for the request. |
 | payload.client | <code>coreapi.Client</code> | The Core API client instance   with which the request was be made. |
 | payload.document | <code>coreapi.Document</code> | The Core API schema document   describing the API to which the request was sent. |
@@ -239,7 +239,7 @@ Contains the data for a Core API action request.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| type | <code>string</code> | The type of the Redux action. Must always be set   to {@see CLIENT_ACTION_REQUEST}. |
+| type | <code>string</code> | The type of the Redux action. Must always be set   to [CLIENT_ACTION_REQUEST](#CLIENT_ACTION_REQUEST). |
 | payload | <code>Object</code> | An object containing the data for the request. |
 | payload.client | <code>coreapi.Client</code> | The Core API client instance   with which the request will be made. |
 | payload.document | <code>coreapi.Document</code> | The Core API schema document   describing the API to which the request will be sent. |
@@ -256,7 +256,7 @@ Contains the response data for a successful Core API action request.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| type | <code>string</code> | The type of the Redux action. Must always be set   to {@see CLIENT_ACTION_SUCCESS}. |
+| type | <code>string</code> | The type of the Redux action. Must always be set   to [CLIENT_ACTION_SUCCESS](#CLIENT_ACTION_SUCCESS). |
 | payload | <code>Object</code> | An object containing the data for the request. |
 | payload.client | <code>coreapi.Client</code> | The Core API client instance   with which the request was be made. |
 | payload.document | <code>coreapi.Document</code> | The Core API schema document   describing the API to which the request was sent. |
@@ -274,7 +274,7 @@ Contains the data for a [get](#get) call.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| type | <code>string</code> | The type of the Redux action. Must always be set   to {@see CLIENT_GET}. |
+| type | <code>string</code> | The type of the Redux action. Must always be set   to [CLIENT_GET](#CLIENT_GET). |
 | payload | <code>Object</code> | An object containing the data for the request. |
 | payload.client | <code>coreapi.Client</code> | The Core API client instance   with which the request will be made. |
 | payload.url | <code>string</code> | The URL of the document being requested. |
@@ -289,7 +289,7 @@ Contains the data for a failed Core API document request.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| type | <code>string</code> | The type of the Redux action. Must always be set   to {@see CLIENT_GET_FAILURE}. |
+| type | <code>string</code> | The type of the Redux action. Must always be set   to [CLIENT_GET_FAILURE](#CLIENT_GET_FAILURE). |
 | payload | <code>Object</code> | An object containing the data for the request. |
 | payload.client | <code>coreapi.Client</code> | The Core API client instance   with which the request will be made. |
 | payload.url | <code>string</code> | The URL of the document that was requested. |
@@ -305,7 +305,7 @@ Contains the data for a Core API document request.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| type | <code>string</code> | The type of the Redux action. Must always be set   to {@see CLIENT_GET_REQUEST}. |
+| type | <code>string</code> | The type of the Redux action. Must always be set   to [CLIENT_GET_REQUEST](#CLIENT_GET_REQUEST). |
 | payload | <code>Object</code> | An object containing the data for the request. |
 | payload.client | <code>coreapi.Client</code> | The Core API client instance   with which the request will be made. |
 | payload.url | <code>string</code> | The URL of the document being requested. |
@@ -320,7 +320,7 @@ Contains the response data for a successful Core API document request.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| type | <code>string</code> | The type of the Redux action. Must always be set   to {@see CLIENT_GET_SUCCESS}. |
+| type | <code>string</code> | The type of the Redux action. Must always be set   to [CLIENT_GET_SUCCESS](#CLIENT_GET_SUCCESS). |
 | payload | <code>Object</code> | An object containing the data for the request. |
 | payload.client | <code>coreapi.Client</code> | The Core API client instance   with which the request will be made. |
 | payload.url | <code>string</code> | The URL of the document that was requested. |

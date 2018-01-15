@@ -18,7 +18,7 @@ import {
  * @param {Object} [params] - Optional data to include with the request. The
  *   structure of the object depends on the action being requested.
  * @returns {ClientAction} - A Redux action for the Core API action request.
- *   If an argument contains invalid data, a {@see ClientActionError} will be
+ *   If an argument contains invalid data, a {@link ClientActionError} will be
  *   returned instead.
  */
 export function action(client, document, keys, params) {
@@ -93,7 +93,7 @@ export function action(client, document, keys, params) {
  *   request will be made.
  * @property {string} url - The URL of the document to request.
  * @returns {ClientGet} - A Redux action for the Core API get request.  If an
- *   argument contains invalid data, a {@see ClientGetError} will be returned
+ *   argument contains invalid data, a {@link ClientGetError} will be returned
  *   instead.
  */
 export function get(client, url) {
